@@ -8,19 +8,19 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Particle
   - Water
   - UI
+  - Ground
   - 
   - 
   - 
+  - Player
   - 
   - 
+  - Enemy
   - 
-  - 
-  - 
-  - 
-  - 
+  - Attack
   - 
   - 
   - 
@@ -38,6 +38,24 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 2144287543
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Player Leveled
+    uniqueID: 3785829133
+    locked: 0
+  - name: New Layer 3
+    uniqueID: 2025268431
+    locked: 0
+  - name: New Layer 4
+    uniqueID: 432628129
+    locked: 0
+  - name: New Layer 5
+    uniqueID: 4145767383
+    locked: 0
+  - name: Foreground
+    uniqueID: 2501398431
     locked: 0
