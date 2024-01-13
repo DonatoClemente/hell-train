@@ -91,7 +91,7 @@ namespace HellTrain
     */
     private void OnFire(InputAction.CallbackContext context)
     {
-
+        Debug.Log("Fire button pressed");
     }
     /******************************************************************************************************************
             Jump:
@@ -100,7 +100,7 @@ namespace HellTrain
     */
     private void OnJump(InputAction.CallbackContext context)
     {
-
+        Debug.Log("Jump button pressed");
     }
     /******************************************************************************************************************
             Ultimate:
@@ -109,7 +109,7 @@ namespace HellTrain
     */
     private void OnUlt(InputAction.CallbackContext context)
     {
-
+        Debug.Log("Ult button pressed");
     }
     /******************************************************************************************************************
             Pause Game:
@@ -118,7 +118,7 @@ namespace HellTrain
     */
     private void OnPause(InputAction.CallbackContext context)
     {
-
+        Debug.Log("Pause button pressed");
     }
 
 
