@@ -39,10 +39,40 @@ namespace HellTrain.PlayerSystems
         // Update is called once per frame
         void Update()
         {
-                    // If game is paused or the play is hurt, do not follow through this script's update
-            //if(playerController.gameStateManager.isPaused || isAnimationLocked)
-            //return;
+            // If game is paused or the play is hurt, do not follow through this script's update
+            if(playerController.gameStateManager.isPaused || isAnimationLocked)
+                return;
         }
+            public void HurtPlayer()
+    {   
+        isAnimationLocked = true;
+        animatorControl.CrossFade("Player Hurt");
+        StartCoroutine(animationLockOut(hurtTime));
+        StartCoroutine(controlsLockOut(hurtTime));
+        Hurt.Invoke();
+    } 
+
+    public void DeadPlayer()
+    {
+        isAnimationLocked = true;
+        controls.Player.Disable();
+        animatorControl.CrossFade("Player Death");
+        Death.Invoke();
+    }
+
+
+    private IEnumerator animationLockOut(float time)
+    {
+        yield return new WaitForSeconds(time);
+        isAnimationLocked = false;
+    }
+
+    private IEnumerator controlsLockOut(float time)
+    {
+        controls.Player.Disable();
+        yield return new WaitForSeconds(time);
+        controls.Player.Enable();
+    }    
     }
 
 }
