@@ -10,7 +10,7 @@ public class TEST_movement : MonoBehaviour
     public float jumpForce = 10f;
 
     private Rigidbody2D rb;
-    private bool isGrounded;
+    [SerializeField] bool isGrounded;
     public LayerMask groundLayer;
 
     public AnimatorController animControl;
@@ -24,7 +24,7 @@ public class TEST_movement : MonoBehaviour
     void Update()
     {
         // Check if the player is grounded
-        isGrounded = Physics2D.Raycast(transform.position, Vector2.down, 0.1f, groundLayer);
+        isGrounded = Physics2D.Raycast(transform.position, Vector2.down, 0.15f, groundLayer);
 
         // Move left or right
         float horizontalInput = Input.GetAxis("Horizontal");

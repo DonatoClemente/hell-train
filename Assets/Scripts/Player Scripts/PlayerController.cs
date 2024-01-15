@@ -24,7 +24,7 @@ namespace HellTrain.PlayerSystems
         /// </summary>  
     
 
-        [SerializeField] GameStateManager gameStateManager;
+        [SerializeField] public GameStateManager gameStateManager;
         public PlayerInput playerControls;
 
         // All player inputs must have their own local variable
@@ -130,6 +130,6 @@ namespace HellTrain.PlayerSystems
             gameStateManager.isPaused = false;
         }
     }
-    
+
     }
 }
