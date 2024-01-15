@@ -13,9 +13,12 @@ public class TEST_movement : MonoBehaviour
     private bool isGrounded;
     public LayerMask groundLayer;
 
+    public AnimatorController animControl;
+
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rb = GetComponentInParent<Rigidbody2D>();
+        animControl = GetComponent<AnimatorController>();
     }
 
     void Update()
@@ -27,6 +30,8 @@ public class TEST_movement : MonoBehaviour
         float horizontalInput = Input.GetAxis("Horizontal");
         Vector2 moveDirection = new Vector2(horizontalInput, 0);
         rb.velocity = new Vector2(moveDirection.x * moveSpeed, rb.velocity.y);
+
+        animControl.OrientateBody(horizontalInput);
 
         // Jump
         if (isGrounded && Input.GetButtonDown("Jump"))
