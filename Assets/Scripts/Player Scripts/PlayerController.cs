@@ -2,7 +2,7 @@ using UnityEngine.EventSystems;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace HellTrain
+namespace HellTrain.PlayerSystems
 {
     public class PlayerController : MonoBehaviour
     {
@@ -24,7 +24,7 @@ namespace HellTrain
         /// </summary>  
     
 
-        
+        [SerializeField] GameStateManager gameStateManager;
         public PlayerInput playerControls;
 
         // All player inputs must have their own local variable
@@ -43,6 +43,7 @@ namespace HellTrain
         // Start() is for finding things in other gameobjects
         void Awake()
         {
+            gameStateManager = FindAnyObjectByType<GameStateManager>();
             playerControls = new PlayerInput();
 
             move    = playerControls.FindAction("Move");
@@ -118,9 +119,17 @@ namespace HellTrain
     */
     private void OnPause(InputAction.CallbackContext context)
     {
-        Debug.Log("Pause button pressed");
+        if(!gameStateManager.isPaused)
+        {
+            gameStateManager.PauseGame();
+            gameStateManager.isPaused = true;
+        }   
+        else if(gameStateManager.isPaused)
+        {
+            gameStateManager.UnpauseGame();
+            gameStateManager.isPaused = false;
+        }
     }
-
-
+    
     }
 }
