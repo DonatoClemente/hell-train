@@ -1,6 +1,7 @@
 using UnityEngine.EventSystems;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Helltrain;
 
 namespace HellTrain.PlayerSystems
 {
@@ -25,6 +26,8 @@ namespace HellTrain.PlayerSystems
     
 
         [SerializeField] public GameStateManager gameStateManager;
+        [SerializeField] Player_Animation_Handler playerAnimation;
+        [SerializeField] CharacterController2D characterController2D;
         public PlayerInput playerControls;
 
         // All player inputs must have their own local variable
@@ -38,12 +41,15 @@ namespace HellTrain.PlayerSystems
         // This will hold the direction we want to move later
         Vector3 movedirection = Vector3.zero;
 
+        // This will let us know if the player is trying to crouch
+        private bool isCrouching = false;
         // Awake is called before Start()
         // only use this to find things inside this gameobject
         // Start() is for finding things in other gameobjects
         void Awake()
         {
             gameStateManager = FindAnyObjectByType<GameStateManager>();
+            characterController2D = GetComponent<CharacterController2D>();
             playerControls = new PlayerInput();
 
             move    = playerControls.FindAction("Move");
@@ -57,6 +63,7 @@ namespace HellTrain.PlayerSystems
         void OnEnable()
         {
             move.performed      += OnMove;
+            move.canceled       += CancelMove;
             fire.performed      += OnFire;
             jump.performed      += OnJump;
             ult.performed       += OnUlt;
@@ -68,6 +75,7 @@ namespace HellTrain.PlayerSystems
         void OnDisable()
         {
             move.performed      -= OnMove;
+            move.canceled       -= CancelMove;
             fire.performed      -= OnFire;
             jump.performed      -= OnJump;
             ult.performed       -= OnUlt;
@@ -83,7 +91,17 @@ namespace HellTrain.PlayerSystems
     */    
     private void OnMove(InputAction.CallbackContext context)
     {
-        movedirection = context.ReadValue<Vector2>();
+        Vector2 direction = context.ReadValue<Vector2>();
+        movedirection.x = direction.x;
+
+        isCrouching = direction.y < 0;
+
+        characterController2D.Move(movedirection.x, false);
+    }
+    private void CancelMove(InputAction.CallbackContext context)
+    {
+        movedirection = new Vector3();
+        isCrouching = false;
     }
     /******************************************************************************************************************
             Fire:
@@ -93,6 +111,7 @@ namespace HellTrain.PlayerSystems
     private void OnFire(InputAction.CallbackContext context)
     {
         Debug.Log("Fire button pressed");
+        playerAnimation.FireRevolver();
     }
     /******************************************************************************************************************
             Jump:
@@ -102,6 +121,7 @@ namespace HellTrain.PlayerSystems
     private void OnJump(InputAction.CallbackContext context)
     {
         Debug.Log("Jump button pressed");
+        characterController2D.Jump();
     }
     /******************************************************************************************************************
             Ultimate:
@@ -129,6 +149,11 @@ namespace HellTrain.PlayerSystems
             gameStateManager.UnpauseGame();
             gameStateManager.isPaused = false;
         }
+    }
+
+    void FixedUpdate()
+    {
+        characterController2D.Move(movedirection.x, isCrouching);
     }
 
     }
