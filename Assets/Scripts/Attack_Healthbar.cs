@@ -7,14 +7,8 @@ namespace Helltrain
 {
     public class Attack_Healthbar : MonoBehaviour
     {
-        [SerializeField] AudioSource SFX;
+        [SerializeField] AudioClip SFX;
         public int damage = 1;
-            
-        // Initialize the sound of the attack.
-        void Start()
-        {
-            SFX = GetComponent<AudioSource>();
-        }
 
         // Upon attack landing on an entity, check for it's healthbar. 
         // Lower it by damage amount, and play attack landing soundFX.
@@ -31,7 +25,7 @@ namespace Helltrain
                     collider.GetComponentInChildren<HealthBar>().ChangeHealth(-damage);
 
                     if(SFX != null)
-                        SFX.Play();
+                        AudioManager.Instance.PlaySoundFX(SFX);
                 }
                     break;
 

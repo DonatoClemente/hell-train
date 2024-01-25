@@ -6,18 +6,23 @@ using UnityEngine.Events;
 namespace HellTrain.PlayerSystems
 {
     public class Player_Animation_Handler : MonoBehaviour
-    {   [SerializeField] PlayerController playerController;
+    {   
+        [SerializeField] PlayerController playerController;
         [SerializeField] AnimatorController animatorControl;
         [SerializeField] private HealthBar health;
         [SerializeField] private PlayerInput controls;
 
+        [Header("Other Body Parts")]
+        [SerializeField] AnimatorController playerArm;
+
         //  audio for sfx
-    /*   [Header("Audio")]
-        [SerializeField] AudioSource walkSFX;
-        [SerializeField] AudioSource pushpullSFX;
-        [SerializeField] AudioSource hurtSFX;
-        [SerializeField] AudioSource deathSFX;
-        private AudioSource currentsound;*/
+        [Header("Audio FX")]
+        [SerializeField] AudioClip walkSFX;
+        [SerializeField] AudioClip pushpullSFX;
+        [SerializeField] AudioClip revolverSFX;
+        [SerializeField] AudioClip hurtSFX;
+        [SerializeField] AudioClip deathSFX;
+        
 
         [Header("Animation Timings (seconds)")]
         [SerializeField] private float hurtTime;
@@ -42,13 +47,18 @@ namespace HellTrain.PlayerSystems
             // If game is paused or the play is hurt, do not follow through this script's update
             if(playerController.gameStateManager.isPaused || isAnimationLocked)
                 return;
+
+            if(health.WasHit())
+                HurtPlayer();
+            
         }
-            public void HurtPlayer()
+    public void HurtPlayer()
     {   
         isAnimationLocked = true;
         animatorControl.CrossFade("Player Hurt");
         StartCoroutine(animationLockOut(hurtTime));
         StartCoroutine(controlsLockOut(hurtTime));
+        AudioManager.Instance.PlaySoundFX(hurtSFX);
         Hurt.Invoke();
     } 
 
@@ -58,6 +68,12 @@ namespace HellTrain.PlayerSystems
         controls.Player.Disable();
         animatorControl.CrossFade("Player Death");
         Death.Invoke();
+    }
+
+    public void FireRevolver()
+    {
+        playerArm.CrossFade("Fire");
+        AudioManager.Instance.PlaySoundFX(revolverSFX);
     }
 
 
