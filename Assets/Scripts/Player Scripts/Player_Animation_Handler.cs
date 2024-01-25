@@ -7,7 +7,7 @@ namespace HellTrain.PlayerSystems
 {
     public class Player_Animation_Handler : MonoBehaviour
     {   
-        [SerializeField] PlayerController playerController;
+        [SerializeField] InputController inputController;
         [SerializeField] AnimatorController animatorControl;
         [SerializeField] private HealthBar health;
         [SerializeField] private PlayerInput controls;
@@ -34,18 +34,18 @@ namespace HellTrain.PlayerSystems
         // Start is called before the first frame update
         void Start()
         {
-            if(playerController == null)
-                playerController = gameObject.GetComponentInParent<PlayerController>();
+            if(inputController == null)
+                inputController = gameObject.GetComponentInParent<InputController>();
 
             animatorControl = gameObject.GetComponent<AnimatorController>();
             health = GetComponentInChildren<HealthBar>();
-            controls = playerController.playerControls;
+            controls = inputController.playerControls;
         }
         // Update is called once per frame
         void Update()
         {
             // If game is paused or the play is hurt, do not follow through this script's update
-            if(playerController.gameStateManager.isPaused || isAnimationLocked)
+            if(inputController.gameStateManager.isPaused || isAnimationLocked)
                 return;
 
             if(health.WasHit())

@@ -5,7 +5,7 @@ using Helltrain;
 
 namespace HellTrain.PlayerSystems
 {
-    public class PlayerController : MonoBehaviour
+    public class InputController : MonoBehaviour
     {
         
         /// <summary>
@@ -91,6 +91,9 @@ namespace HellTrain.PlayerSystems
     */    
     private void OnMove(InputAction.CallbackContext context)
     {
+        if(gameStateManager.isPaused)
+            return;
+
         Vector2 direction = context.ReadValue<Vector2>();
         movedirection.x = direction.x;
 
@@ -110,7 +113,9 @@ namespace HellTrain.PlayerSystems
     */
     private void OnFire(InputAction.CallbackContext context)
     {
-        
+        if(gameStateManager.isPaused)
+            return;
+
         playerAnimation.FireRevolver();
     }
     /******************************************************************************************************************
@@ -120,7 +125,9 @@ namespace HellTrain.PlayerSystems
     */
     private void OnJump(InputAction.CallbackContext context)
     {
-       
+        if(gameStateManager.isPaused)
+            return;
+            
         characterController2D.Jump();
     }
     /******************************************************************************************************************
