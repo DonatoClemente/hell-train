@@ -7,8 +7,8 @@ namespace Helltrain
 {
     public class CharacterController2D : MonoBehaviour
     {
-        [Tooltip("Amount of force added when the player jumps")]
-        [SerializeField] private float m_JumpForce = 400f;							// Amount of force added when the player jumps.
+        [Tooltip("The velocity of the character's jump")]
+        [SerializeField] private float m_JumpVelocity = 15f;							// Amount of force added when the player jumps.
         [Tooltip("Modifier to movement speed when crouching [1 = 100%]")]
         [Range(0, 1)] [SerializeField] private float m_CrouchSpeed = .36f;			// Amount of maxSpeed applied to crouching movement. 1 = 100%
         [Tooltip("How much to smooth out the movement")]        
@@ -35,8 +35,9 @@ namespace Helltrain
         [SerializeField] bool m_FacingRight = true;                           // For determining which way the player is currently facing.
         private float trueDoubleJumpTimer = 0f;    
         public float coyotetimer = .25f;
+        private float m_startingCoyoteTime;
         private Rigidbody2D m_Rigidbody2D;
-        public Vector3 m_Velocity = Vector3.zero;
+        private Vector3 m_Velocity = Vector3.zero;
 
         [Header("Events")]
         [Space]
@@ -49,11 +50,14 @@ namespace Helltrain
         public BoolEvent OnCrouchEvent;
         private bool m_wasCrouching = false;
         private bool isJumping = false;
+        public bool isWallClinging = false;
+        private bool justWallJumped = false;
 
         // Start is called before the first frame update
         void Awake()
         {
             m_Rigidbody2D = GetComponent<Rigidbody2D>();
+            m_startingCoyoteTime = coyotetimer;
 
             if (OnLandEvent == null)
                 OnLandEvent = new UnityEvent();
@@ -64,14 +68,12 @@ namespace Helltrain
 
         private void Update()
         {
-            if(trueDoubleJumpTimer > 0){
-                trueDoubleJumpTimer = (trueDoubleJumpTimer - Time.deltaTime);		
-            }
+            if(trueDoubleJumpTimer > 0)
+                trueDoubleJumpTimer -= Time.deltaTime;		
 
-            if(coyotetimer > 0){
-                coyotetimer = (coyotetimer - Time.deltaTime);
-            }
-
+            if(coyotetimer > 0)
+                coyotetimer -= Time.deltaTime;
+            
             if(isJumping && m_Rigidbody2D.velocity.y <= 0)
                 isJumping = false;
         }
@@ -80,11 +82,13 @@ namespace Helltrain
         {
             // Check if the rigidbody is grounded
             // Apply gravity only if the rigidbody is not grounded
-                IsGrounded();
+            if(!m_Grounded)
                 ApplyGravity();
-            //else
-               // m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, 0);
+             else
+                coyotetimer = m_startingCoyoteTime;
 
+            Mathf.Clamp(Mathf.Abs(m_Rigidbody2D.velocity.y), 0f, 50f);
+            Mathf.Clamp(Mathf.Abs(m_Rigidbody2D.velocity.x), 0f, 50f);
         }     
 
         public void Jump()
@@ -94,7 +98,7 @@ namespace Helltrain
             if(CoyoteTime)
             {	
                     // If you aren't jumping already, and you either are grounded or have some coyote time left	
-                    if (( m_Grounded || coyotetimer > 0) && !isJumping)
+                    if (( m_Grounded || coyotetimer > 0) && !isJumping && !isWallClinging)
                     {	
                             // These are commented out, but useful for testing
                             // Debug.Log("isGrounded set to: " + m_Grounded );
@@ -104,17 +108,27 @@ namespace Helltrain
                         coyotetimer = 0;
                         isJumping = true;
                         trueDoubleJumpTimer = 0.2f;
-                        
                         m_Grounded = false;
-                        m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+                       
+                        m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, m_JumpVelocity);
                         
                     }
-                    else if(!m_Grounded && canDoubleJump && trueDoubleJumpTimer <= 0)
-                    {   
-                        
+                    else if(!isWallClinging && canDoubleJump && trueDoubleJumpTimer <= 0)
+                    {                 
                         trueDoubleJumpTimer = 0.55f;
                         canDoubleJump = false;
-                        m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce * 0.75f));
+                       
+                        m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, m_JumpVelocity* 0.75f);
+                    }
+                    else if(isWallClinging && !justWallJumped)
+                    {   
+                        isJumping = true;
+                        trueDoubleJumpTimer = 0.2f;
+                        justWallJumped = true;
+                        Flip();
+                        StartCoroutine(JustWallJumped());
+                        
+                        m_Rigidbody2D.velocity = new Vector2(-wallDirection *  m_JumpVelocity*.6f, m_JumpVelocity);
                     }
             }
             else
@@ -127,19 +141,28 @@ namespace Helltrain
                         trueDoubleJumpTimer = 0.2f;
                         canDoubleJump = false;
                         m_Grounded = false;
-                        m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+                        m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpVelocity));
                     }
                     else if(!m_Grounded && canDoubleJump && trueDoubleJumpTimer <= 0 )
                     {  
                         trueDoubleJumpTimer = 0.55f;
                         canDoubleJump = false;
-                        m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce * 0.75f));
+                        m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpVelocity * 0.75f));
                     }
             }
         }
 
+        IEnumerator JustWallJumped()
+        {
+            yield return new WaitForSeconds(0.15f);
+            justWallJumped = false;
+        }
+
         public void Move(float move, bool crouch)
         {  
+            if(justWallJumped)
+                return;
+
             // If crouching, check to see if the character can stand up
             if (!crouch)
             {
@@ -205,38 +228,12 @@ namespace Helltrain
     
         private void ApplyGravity()
         {
-            Vector2 gravityForce = new Vector2(0f, -gravity * Time.fixedDeltaTime);
+            // Gravity * The exponential constant * fixedDeltaTime 
+            Vector2 gravityForce = new Vector2(0f, -gravity * 2.718f * Time.fixedDeltaTime);
             m_Rigidbody2D.velocity +=  gravityForce;
-        }
-
-        private bool IsGrounded()
-        {
-            bool wasGrounded = m_Grounded;
-            justLanded = false;	
-
-            // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
-            // This can be done using layers 
-            Collider2D[] colliders = Physics2D.OverlapCircleAll(m_GroundCheck.position, k_GroundedRadius, m_WhatIsGround);
-            for (int i = 0; i < colliders.Length; i++)
-            {   Debug.Log("Going through grounded colliders");
-                if (colliders[i].gameObject != gameObject && (m_Rigidbody2D.velocity.y == 0))
-                {	
-                    m_Grounded = true;	
-
-                    if (!wasGrounded){
-                        justLanded = true;		
-                        trueDoubleJumpTimer = 0;
-                        OnLandEvent.Invoke();
-                    }			
-                }
-                else
-                {
-                    m_Grounded = false;
-                }      
-            }
             
-            return m_Grounded;
         }
+
 
         public void Flip()
         {
@@ -248,6 +245,87 @@ namespace Helltrain
         }
 
 
-      
+
+        float wallDirection = 0;
+        void OnCollisionStay2D(Collision2D other)
+        {
+            ContactPoint2D[] allPoints = new ContactPoint2D[other.contactCount];
+            other.GetContacts(allPoints);
+
+            if(other.gameObject.layer == 6)
+                foreach (var point2D in allPoints)
+                {
+                    // If the contact point is on our side, and we aren't ground, nor falling we are wall clinging
+                    if(!m_Grounded)
+                    {
+                        if(m_Rigidbody2D.velocity.y == 0)
+                        {
+                            isWallClinging = true;
+                            wallDirection = Mathf.Sign(point2D.point.x - transform.position.x);
+                            break;
+                        }
+                        else if(!isJumping)
+                            m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, m_Rigidbody2D.velocity.y * .95f);
+                    }    
+                    
+                    
+                }
+        }
+
+        void OnCollisionExit2D(Collision2D other)
+        {
+            if(other.gameObject.layer == 6)
+             {
+                isWallClinging = false;
+                wallDirection = 0;
+             }  
+        }
+
+
+
+
+
+
+
+
+
+
+        /// <summary>
+        ///                     Depricated code below. No longer necesary with the OnCollisionEnter/Exit functions
+        ///                     If we swap back is kinematics, use the code below instead.
+        /// </summary>
+        /// <returns></returns>
+
+
+
+        private bool IsGrounded()
+        {
+            bool wasGrounded = m_Grounded;
+            justLanded = false;	
+
+            // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
+            // This can be done using layers 
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(m_GroundCheck.position, k_GroundedRadius, m_WhatIsGround);
+            for (int i = 0; i < colliders.Length; i++)
+            {   
+                if (colliders[i].gameObject != gameObject && (m_Rigidbody2D.velocity.y == 0))
+                {	
+                    m_Grounded = true;	
+
+                    if (!wasGrounded){
+                        justLanded = true;		
+                        trueDoubleJumpTimer = 0;
+                        OnLandEvent.Invoke();
+                    }		
+                    break;	
+                }
+                else
+                {   
+                    m_Grounded = false;
+                }      
+            }
+            
+            return m_Grounded;
+        }
     }
 }
