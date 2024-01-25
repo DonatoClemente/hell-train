@@ -36,6 +36,7 @@ namespace Helltrain
         private float trueDoubleJumpTimer = 0f;    
         public float coyotetimer = .25f;
         private float m_startingCoyoteTime;
+        public float wallDirection = 0;
         private Rigidbody2D m_Rigidbody2D;
         private Vector3 m_Velocity = Vector3.zero;
 
@@ -50,8 +51,8 @@ namespace Helltrain
         public BoolEvent OnCrouchEvent;
         private bool m_wasCrouching = false;
         private bool isJumping = false;
-        public bool isWallClinging = false;
         private bool justWallJumped = false;
+        public bool isWallClinging = false;
 
         // Start is called before the first frame update
         void Awake()
@@ -245,44 +246,14 @@ namespace Helltrain
         }
 
 
-
-        float wallDirection = 0;
+        
         void OnCollisionStay2D(Collision2D other)
         {
-            ContactPoint2D[] allPoints = new ContactPoint2D[other.contactCount];
-            other.GetContacts(allPoints);
-
+            // If the contact point is on our side, and we aren't ground, nor falling we are wall clinging
             if(other.gameObject.layer == 6)
-                foreach (var point2D in allPoints)
-                {
-                    // If the contact point is on our side, and we aren't ground, nor falling we are wall clinging
-                    if(!m_Grounded)
-                    {
-                        if(m_Rigidbody2D.velocity.y == 0)
-                        {
-                            isWallClinging = true;
-                            wallDirection = Mathf.Sign(point2D.point.x - transform.position.x);
-                            break;
-                        }
-                        else if(!isJumping)
-                            m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, m_Rigidbody2D.velocity.y * .95f);
-                    }    
-                    
-                    
-                }
+                if(!m_Grounded && !isJumping && m_Rigidbody2D.velocity.y != 0)
+                        m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, m_Rigidbody2D.velocity.y * .95f);
         }
-
-        void OnCollisionExit2D(Collision2D other)
-        {
-            if(other.gameObject.layer == 6)
-             {
-                isWallClinging = false;
-                wallDirection = 0;
-             }  
-        }
-
-
-
 
 
 
@@ -291,11 +262,10 @@ namespace Helltrain
 
 
         /// <summary>
-        ///                     Depricated code below. No longer necesary with the OnCollisionEnter/Exit functions
-        ///                     If we swap back is kinematics, use the code below instead.
+        ///                     Depricated code below. No longer necesary
+        ///                     
         /// </summary>
         /// <returns></returns>
-
 
 
         private bool IsGrounded()
