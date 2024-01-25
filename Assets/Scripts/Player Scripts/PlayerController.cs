@@ -110,7 +110,7 @@ namespace HellTrain.PlayerSystems
     */
     private void OnFire(InputAction.CallbackContext context)
     {
-        Debug.Log("Fire button pressed");
+        
         playerAnimation.FireRevolver();
     }
     /******************************************************************************************************************
@@ -120,7 +120,7 @@ namespace HellTrain.PlayerSystems
     */
     private void OnJump(InputAction.CallbackContext context)
     {
-        Debug.Log("Jump button pressed");
+       
         characterController2D.Jump();
     }
     /******************************************************************************************************************
