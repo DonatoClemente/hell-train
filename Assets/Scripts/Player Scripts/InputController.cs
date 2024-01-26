@@ -2,6 +2,11 @@ using UnityEngine.EventSystems;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Helltrain;
+using System;
+using TMPro;
+using UnityEngine.UIElements;
+using TreeEditor;
+using System.Collections;
 
 namespace HellTrain.PlayerSystems
 {
@@ -30,19 +35,23 @@ namespace HellTrain.PlayerSystems
         [SerializeField] CharacterController2D characterController2D;
         public PlayerInput playerControls;
 
+        [SerializeField] GameObject GhostGrapple;
+
         // All player inputs must have their own local variable
         private InputAction move;
         private InputAction fire;        
         private InputAction jump;
+        private InputAction grapple;
         private InputAction ult;
         private InputAction pause;
 
 
         // This will hold the direction we want to move later
         Vector3 movedirection = Vector3.zero;
-
+        private GameObject ghosthand;
         // This will let us know if the player is trying to crouch
         private bool isCrouching = false;
+        private bool isGrappling = false;
         // Awake is called before Start()
         // only use this to find things inside this gameobject
         // Start() is for finding things in other gameobjects
@@ -55,6 +64,7 @@ namespace HellTrain.PlayerSystems
             move    = playerControls.FindAction("Move");
             fire    = playerControls.FindAction("Fire");
             jump    = playerControls.FindAction("Jump"); 
+            grapple = playerControls.FindAction("Grapple");
             ult     = playerControls.FindAction("ULT");
             pause   = playerControls.FindAction("Pause");
         }
@@ -66,6 +76,8 @@ namespace HellTrain.PlayerSystems
             move.canceled       += CancelMove;
             fire.performed      += OnFire;
             jump.performed      += OnJump;
+            grapple.performed   += OnGhostGrapple;
+            grapple.canceled    += CancelGhostGrapple;
             ult.performed       += OnUlt;
             pause.performed     += OnPause;
 
@@ -78,6 +90,8 @@ namespace HellTrain.PlayerSystems
             move.canceled       -= CancelMove;
             fire.performed      -= OnFire;
             jump.performed      -= OnJump;
+            grapple.performed   -= OnGhostGrapple;
+            grapple.canceled    -= CancelGhostGrapple;
             ult.performed       -= OnUlt;
             pause.performed     -= OnPause;
 
@@ -127,15 +141,65 @@ namespace HellTrain.PlayerSystems
     {
         if(gameStateManager.isPaused)
             return;
-            
+
         characterController2D.Jump();
     }
     /******************************************************************************************************************
-            Ultimate:
+            Ghost Grapple:
 
-                -Does Something
+                -Pivot from a point in the air
+                -Spawns a cool ghosty hand
     */
-    private void OnUlt(InputAction.CallbackContext context)
+    private void OnGhostGrapple(InputAction.CallbackContext context)
+    {
+        if(gameStateManager.isPaused || isGrappling)
+            return;
+
+        if(characterController2D.m_Grounded || characterController2D.isWallClinging || characterController2D.isJumping)
+            return;
+ 
+        ghosthand = Instantiate(GhostGrapple);
+        ghosthand.transform.position = transform.position;
+        ghosthand.transform.eulerAngles = transform.eulerAngles;
+        characterController2D.enableFlipping = false;
+        GetComponentInChildren<RelativeJoint2D>().enabled = true;
+        isGrappling = true;
+        StartCoroutine(AttachGrapple());
+        GetComponentInChildren<RelativeJoint2D>().connectedBody = ghosthand.transform.Find("Ghost Hand/Ghost Grapple/Player Grapple Point").GetComponent<Rigidbody2D>();
+    }
+
+        IEnumerator AttachGrapple()
+        { 
+            float i = .4f;
+            while(i > 0)
+            {
+                if(ghosthand)
+                    ghosthand.transform.position = transform.position;
+                i -= Time.deltaTime;
+                yield return new WaitForEndOfFrame();
+            }
+            if(ghosthand)
+            {ghosthand.transform.position = transform.position;
+             ghosthand.GetComponentInChildren<Animator>().enabled = false;}
+        }
+
+    private void CancelGhostGrapple(InputAction.CallbackContext context)
+    {
+        if(!isGrappling || gameStateManager.isPaused) 
+            return;
+
+        isGrappling = false;
+        characterController2D.enableFlipping = true;
+        GetComponentInChildren<RelativeJoint2D>().enabled = false;
+        Destroy(ghosthand);
+    }
+
+        /******************************************************************************************************************
+       Ultimate:
+
+           -Does Something
+*/
+        private void OnUlt(InputAction.CallbackContext context)
     {
         Debug.Log("Ult button pressed");
     }
