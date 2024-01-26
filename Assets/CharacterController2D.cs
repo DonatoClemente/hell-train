@@ -50,14 +50,16 @@ namespace Helltrain
 
         public BoolEvent OnCrouchEvent;
         private bool m_wasCrouching = false;
-        private bool isJumping = false;
+        public bool isJumping = false;
         private bool justWallJumped = false;
+        public bool enableFlipping = true;
         public bool isWallClinging = false;
 
         // Start is called before the first frame update
         void Awake()
         {
-            m_Rigidbody2D = GetComponent<Rigidbody2D>();
+            if(!m_Rigidbody2D)
+            m_Rigidbody2D = GetComponentInChildren<Rigidbody2D>();
             m_startingCoyoteTime = coyotetimer;
 
             if (OnLandEvent == null)
@@ -238,11 +240,14 @@ namespace Helltrain
 
         public void Flip()
         {
+            if(!enableFlipping)
+                return;
+
             // Switch the way the player is labelled as facing.
             m_FacingRight = !m_FacingRight;
 
             // Rotate 180 degrees to flip
-            transform.Rotate(0,180,0);
+            transform.root.Rotate(0,180,0);
         }
 
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-namespace Helltrain
+namespace Helltrain.PlayerSystems
 {
     public class GroundedTrigger : MonoBehaviour
     {
