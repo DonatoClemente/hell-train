@@ -51,7 +51,7 @@ public class AnimatorController : MonoBehaviour
 
             public void CrossFade(string stateName)
             {   
-                
+                //Debug.Log(stateName);
                 animator.CrossFade(stateName, 0,0);
             }
 

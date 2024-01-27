@@ -52,6 +52,7 @@ namespace HellTrain.PlayerSystems
         // This will let us know if the player is trying to crouch
         private bool isCrouching = false;
         private bool isGrappling = false;
+        private bool canFire = true;
         // Awake is called before Start()
         // only use this to find things inside this gameobject
         // Start() is for finding things in other gameobjects
@@ -108,12 +109,10 @@ namespace HellTrain.PlayerSystems
         if(gameStateManager.isPaused)
             return;
 
-        Vector2 direction = context.ReadValue<Vector2>();
-        movedirection.x = direction.x;
-
-        isCrouching = direction.y < 0;
-
-        characterController2D.Move(movedirection.x, false);
+        movedirection = context.ReadValue<Vector2>();
+        movedirection.Normalize();
+      
+        isCrouching = movedirection.y < 0;
     }
     private void CancelMove(InputAction.CallbackContext context)
     {
@@ -127,7 +126,7 @@ namespace HellTrain.PlayerSystems
     */
     private void OnFire(InputAction.CallbackContext context)
     {
-        if(gameStateManager.isPaused)
+        if(gameStateManager.isPaused || !canFire)
             return;
 
         playerAnimation.FireRevolver();
@@ -152,14 +151,15 @@ namespace HellTrain.PlayerSystems
     */
     private void OnGhostGrapple(InputAction.CallbackContext context)
     {
+        return;
         if(gameStateManager.isPaused || isGrappling)
             return;
 
-        if(characterController2D.m_Grounded || characterController2D.isWallClinging || characterController2D.isJumping)
+        if(characterController2D.m_Grounded || characterController2D.isWallClinging || characterController2D.isGoingUp)
             return;
  
         ghosthand = Instantiate(GhostGrapple);
-        ghosthand.transform.position = transform.position;
+        ghosthand.transform.position = transform.position + new Vector3(0,1);
         ghosthand.transform.eulerAngles = transform.eulerAngles;
         characterController2D.enableFlipping = false;
         GetComponentInChildren<RelativeJoint2D>().enabled = true;
@@ -174,12 +174,12 @@ namespace HellTrain.PlayerSystems
             while(i > 0)
             {
                 if(ghosthand)
-                    ghosthand.transform.position = transform.position;
+                    ghosthand.transform.position = transform.position + new Vector3(0,1);
                 i -= Time.deltaTime;
                 yield return new WaitForEndOfFrame();
             }
             if(ghosthand)
-            {ghosthand.transform.position = transform.position;
+            {ghosthand.transform.position = transform.position+ new Vector3(0,1);
              ghosthand.GetComponentInChildren<Animator>().enabled = false;}
         }
 
@@ -224,7 +224,14 @@ namespace HellTrain.PlayerSystems
 
     void FixedUpdate()
     {
-        characterController2D.Move(movedirection.x, isCrouching);
+        characterController2D.Move(movedirection, isCrouching);
+    }
+
+    IEnumerator GunTimer()
+    {
+        canFire = false;
+        yield return new WaitForSeconds(.6f);
+        canFire = true;
     }
 
     }

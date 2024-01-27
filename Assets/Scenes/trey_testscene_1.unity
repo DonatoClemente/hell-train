@@ -402,7 +402,7 @@ Transform:
   m_GameObject: {fileID: 429428903}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.7, z: -10}
+  m_LocalPosition: {x: 0, y: 2.209, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -668,7 +668,7 @@ Transform:
   m_GameObject: {fileID: 500074847}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.7, z: -10}
+  m_LocalPosition: {x: 0, y: 2.209, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1918,36 +1918,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1462177787 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7891585404921468269, guid: 976fa6a33b5b5ed44b5914892303571f, type: 3}
-  m_PrefabInstance: {fileID: 7462982413488347142}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1462177791 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3336917861044897082, guid: 976fa6a33b5b5ed44b5914892303571f, type: 3}
   m_PrefabInstance: {fileID: 7462982413488347142}
   m_PrefabAsset: {fileID: 0}
---- !u!254 &1462177798
-RelativeJoint2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1462177787}
-  m_Enabled: 0
-  serializedVersion: 4
-  m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 0}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_BreakAction: 3
-  m_MaxForce: 10000
-  m_MaxTorque: 10000
-  m_CorrectionScale: 0.5
-  m_AutoConfigureOffset: 1
-  m_LinearOffset: {x: -0.25, y: 0.5}
-  m_AngularOffset: 0
 --- !u!1 &1500693211 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3057650619343341969, guid: bf000955b6246c24e8d124ce45fe135d, type: 3}
@@ -2654,6 +2629,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Audio Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 5201093114167782976, guid: c1820e4585a7a5c4285fed71e015f92e, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7777918155411574450, guid: c1820e4585a7a5c4285fed71e015f92e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.5710819
@@ -2826,7 +2805,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3336917861044897082, guid: 976fa6a33b5b5ed44b5914892303571f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.7
+      value: 2.209
       objectReference: {fileID: 0}
     - target: {fileID: 3336917861044897082, guid: 976fa6a33b5b5ed44b5914892303571f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2861,13 +2840,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3618285260978892079, guid: 976fa6a33b5b5ed44b5914892303571f, type: 3}
-      propertyPath: GhostGrapple
-      value: 
-      objectReference: {fileID: 4817003447396722046, guid: 62decdcbb1c40e843aa4a8ed9e471b5f, type: 3}
-    - target: {fileID: 3618285260978892079, guid: 976fa6a33b5b5ed44b5914892303571f, type: 3}
       propertyPath: gameStateManager
       value: 
       objectReference: {fileID: 222074770}
+    - target: {fileID: 5574161587301979756, guid: 976fa6a33b5b5ed44b5914892303571f, type: 3}
+      propertyPath: m_Size.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574161587301979756, guid: 976fa6a33b5b5ed44b5914892303571f, type: 3}
+      propertyPath: m_Size.y
+      value: 0.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574161587301979756, guid: 976fa6a33b5b5ed44b5914892303571f, type: 3}
+      propertyPath: m_EdgeRadius
+      value: 0.04
+      objectReference: {fileID: 0}
     - target: {fileID: 7891585404921468269, guid: 976fa6a33b5b5ed44b5914892303571f, type: 3}
       propertyPath: m_Name
       value: Prototyped Player
@@ -2875,15 +2862,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7891585404921468269, guid: 976fa6a33b5b5ed44b5914892303571f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1462177798}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 976fa6a33b5b5ed44b5914892303571f, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 2066819561}
   - {fileID: 500074850}
   - {fileID: 7462982413488347142}
   - {fileID: 1818490652}
@@ -2894,5 +2879,4 @@ SceneRoots:
   - {fileID: 594138275}
   - {fileID: 6407035464747437667}
   - {fileID: 443026530}
-  - {fileID: 2066819561}
   - {fileID: 41836785}

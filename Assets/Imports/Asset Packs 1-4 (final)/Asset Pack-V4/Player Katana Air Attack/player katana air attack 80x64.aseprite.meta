@@ -1,0 +1,388 @@
+fileFormatVersion: 2
+guid: d2377e9245e47384f9741f75b95a8d9b
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: player katana air attack 80x64_Frame_0
+    originalName: 
+    pivot: {x: 0.3148148, y: -0.33333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 99
+      width: 54
+      height: 30
+    spriteID: b03e3301c67697944b2b47436a08849d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 99}
+  - name: player katana air attack 80x64_Frame_1
+    originalName: 
+    pivot: {x: 0.37037036, y: -0.2702703}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 54
+      width: 54
+      height: 37
+    spriteID: f813ba24c6ca0464589d1ab7e5584ab5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 54}
+  - name: player katana air attack 80x64_Frame_2
+    originalName: 
+    pivot: {x: 0.6, y: -0.29411766}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 137
+      width: 35
+      height: 34
+    spriteID: 1426808bbc560d44a931502bab625520
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 137}
+  - name: player katana air attack 80x64_Frame_3
+    originalName: 
+    pivot: {x: 0.6, y: -0.29411766}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 179
+      width: 35
+      height: 34
+    spriteID: 628a8e5ec92113741a2cb1db4385f611
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 179}
+  - name: player katana air attack 80x64_Frame_4
+    originalName: 
+    pivot: {x: 0.33333334, y: -0.2777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 66
+      y: 4
+      width: 57
+      height: 36
+    spriteID: f3f3a05682ad3dd4a8fd424131970907
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 66, y: 4}
+  - name: player katana air attack 80x64_Frame_5
+    originalName: 
+    pivot: {x: 0.35185185, y: -0.23809524}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 54
+      height: 42
+    spriteID: 4797bc40ad9a52046ba5b4348b72c838
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: player katana air attack 80x64_Frame_6
+    originalName: 
+    pivot: {x: 0.4666667, y: -0.23255813}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 66
+      y: 48
+      width: 15
+      height: 43
+    spriteID: 2c847eb9801bad24bb7c7d9e1df654d0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 66, y: 48}
+  - name: player katana air attack 80x64_Frame_7
+    originalName: 
+    pivot: {x: 0.4666667, y: -0.23255813}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 66
+      y: 99
+      width: 15
+      height: 43
+    spriteID: 0e20167516e03e443a749f63314e25d2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 66, y: 99}
+  - name: player katana air attack 80x64_Frame_8
+    originalName: 
+    pivot: {x: 0.4666667, y: -0.23809524}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 66
+      y: 150
+      width: 15
+      height: 42
+    spriteID: b7e6d98dad2d14b43bd77338c0d91a98
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 66, y: 150}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1044534311
+    name: player katana air attack 80x64
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: player katana air attack 80x64_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 23
+        y: 10
+        width: 54
+        height: 30
+      spriteId: b03e3301c67697944b2b47436a08849d
+    - name: player katana air attack 80x64_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 20
+        y: 10
+        width: 54
+        height: 37
+      spriteId: f813ba24c6ca0464589d1ab7e5584ab5
+    - name: player katana air attack 80x64_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 19
+        y: 10
+        width: 35
+        height: 34
+      spriteId: 1426808bbc560d44a931502bab625520
+    - name: player katana air attack 80x64_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 19
+        y: 10
+        width: 35
+        height: 34
+      spriteId: 628a8e5ec92113741a2cb1db4385f611
+    - name: player katana air attack 80x64_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 21
+        y: 10
+        width: 57
+        height: 36
+      spriteId: f3f3a05682ad3dd4a8fd424131970907
+    - name: player katana air attack 80x64_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 21
+        y: 10
+        width: 54
+        height: 42
+      spriteId: 4797bc40ad9a52046ba5b4348b72c838
+    - name: player katana air attack 80x64_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 33
+        y: 10
+        width: 15
+        height: 43
+      spriteId: 2c847eb9801bad24bb7c7d9e1df654d0
+    - name: player katana air attack 80x64_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 33
+        y: 10
+        width: 15
+        height: 43
+      spriteId: 0e20167516e03e443a749f63314e25d2
+    - name: player katana air attack 80x64_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 33
+        y: 10
+        width: 15
+        height: 42
+      spriteId: b7e6d98dad2d14b43bd77338c0d91a98
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 80, y: 64}

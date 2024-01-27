@@ -1,0 +1,2788 @@
+fileFormatVersion: 2
+guid: 8823db85910f05b498bc7629814ecd58
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 24
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638419121872934457
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: SideScroller Player Prototype_Frame_0
+    originalName: 
+    pivot: {x: 0.5555556, y: -0.2758621}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 157
+      y: 413
+      width: 18
+      height: 29
+    spriteID: d7d3f56012a571b49a3f153506176d7c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 157, y: 413}
+  - name: SideScroller Player Prototype_Frame_1
+    originalName: 
+    pivot: {x: 0.5263158, y: -0.2962963}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 190
+      width: 19
+      height: 27
+    spriteID: ae1da8a0e8be2ae45b206acfd14dd43b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 190}
+  - name: SideScroller Player Prototype_Frame_2
+    originalName: 
+    pivot: {x: 0.5263158, y: -0.30769232}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 437
+      width: 19
+      height: 26
+    spriteID: 5983cc4cbaa960549b5b6fa68a1000c7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 437}
+  - name: SideScroller Player Prototype_Frame_3
+    originalName: 
+    pivot: {x: 0.5263158, y: -0.30769232}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 471
+      width: 19
+      height: 26
+    spriteID: e887495d8c6fdcd40b3bd0e76432e3db
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 471}
+  - name: SideScroller Player Prototype_Frame_4
+    originalName: 
+    pivot: {x: 0.5263158, y: -0.30769232}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 194
+      y: 29
+      width: 19
+      height: 26
+    spriteID: 4837e61cb8e91b84385bf035ff1b0e08
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 194, y: 29}
+  - name: SideScroller Player Prototype_Frame_5
+    originalName: 
+    pivot: {x: 0.5263158, y: -0.2962963}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 225
+      width: 19
+      height: 27
+    spriteID: e35cee40767c796458a053a1133f20c3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 225}
+  - name: SideScroller Player Prototype_Frame_6
+    originalName: 
+    pivot: {x: 0.5555556, y: -0.2758621}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 157
+      y: 450
+      width: 18
+      height: 29
+    spriteID: 6412e112bee73f147bbb8523508f8485
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 157, y: 450}
+  - name: SideScroller Player Prototype_Frame_7
+    originalName: 
+    pivot: {x: 0.5555556, y: -0.26666668}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 157
+      y: 299
+      width: 18
+      height: 30
+    spriteID: 87466940c8f0d484b8aeb76948e50c2f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 157, y: 299}
+  - name: SideScroller Player Prototype_Frame_8
+    originalName: 
+    pivot: {x: 0.5555556, y: -0.26666668}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 157
+      y: 337
+      width: 18
+      height: 30
+    spriteID: 9b95172583dc88542941a2e50e9cc617
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 157, y: 337}
+  - name: SideScroller Player Prototype_Frame_9
+    originalName: 
+    pivot: {x: 0.5555556, y: -0.26666668}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 157
+      y: 375
+      width: 18
+      height: 30
+    spriteID: a45ff0cad38c8634c8328e32c302d44a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 157, y: 375}
+  - name: SideScroller Player Prototype_Frame_10
+    originalName: 
+    pivot: {x: 0.5, y: -0.2857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 194
+      y: 453
+      width: 12
+      height: 28
+    spriteID: 697ea9b7a26d33d4fbe79ff5b4983d26
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 194, y: 453}
+  - name: SideScroller Player Prototype_Frame_11
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.2758621}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 194
+      y: 272
+      width: 13
+      height: 29
+    spriteID: 3350457f00f27204b990856d008d981d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 194, y: 272}
+  - name: SideScroller Player Prototype_Frame_12
+    originalName: 
+    pivot: {x: 0.5, y: -0.2857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 365
+      width: 18
+      height: 28
+    spriteID: 6e16f015ce1bb4140924af8458641dba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 365}
+  - name: SideScroller Player Prototype_Frame_13
+    originalName: 
+    pivot: {x: 0.5263158, y: -0.2962963}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 260
+      width: 19
+      height: 27
+    spriteID: ac700027fd018314c9fd9806a8902f23
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 260}
+  - name: SideScroller Player Prototype_Frame_14
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.2857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 194
+      y: 383
+      width: 13
+      height: 28
+    spriteID: a22a0ff75ab70d74ba0d2b9a48371cae
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 194, y: 383}
+  - name: SideScroller Player Prototype_Frame_15
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.2758621}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 194
+      y: 309
+      width: 13
+      height: 29
+    spriteID: 4b33d57ba2914e64bbea2d17fd7a2c44
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 194, y: 309}
+  - name: SideScroller Player Prototype_Frame_16
+    originalName: 
+    pivot: {x: 0.5, y: -0.2857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 401
+      width: 18
+      height: 28
+    spriteID: 51c2133176dd46c48b3cc61c4db7e013
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 401}
+  - name: SideScroller Player Prototype_Frame_17
+    originalName: 
+    pivot: {x: 0.4761905, y: -0.2962963}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 157
+      y: 68
+      width: 21
+      height: 27
+    spriteID: c9a73c24eef578c4694900bffaca90dd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 157, y: 68}
+  - name: SideScroller Player Prototype_Frame_18
+    originalName: 
+    pivot: {x: 0.5833334, y: -0.2758621}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 76
+      width: 24
+      height: 29
+    spriteID: 3ce4b78fb1d268f42b26dc050da0a320
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 76}
+  - name: SideScroller Player Prototype_Frame_19
+    originalName: 
+    pivot: {x: 0.51851857, y: -0.44444445}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 120
+      y: 223
+      width: 27
+      height: 27
+    spriteID: 3b9ae9a6c0c5c7d439084e765f2ffb09
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 120, y: 223}
+  - name: SideScroller Player Prototype_Frame_20
+    originalName: 
+    pivot: {x: 0.59999996, y: -0.2580645}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 120
+      y: 109
+      width: 25
+      height: 31
+    spriteID: 57d050cbffa0655479521af4d9771436
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 120, y: 109}
+  - name: SideScroller Player Prototype_Frame_21
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.2857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 194
+      y: 131
+      width: 16
+      height: 28
+    spriteID: b3963a616d737564b9140f7892445c2b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 194, y: 131}
+  - name: SideScroller Player Prototype_Frame_22
+    originalName: 
+    pivot: {x: 0.5416666, y: -0.2758621}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 113
+      width: 24
+      height: 29
+    spriteID: cb4d56fa9cdc9654ba65fa00b601bd0a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 113}
+  - name: SideScroller Player Prototype_Frame_23
+    originalName: 
+    pivot: {x: 0.5555556, y: -0.39285716}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 120
+      y: 148
+      width: 27
+      height: 28
+    spriteID: 55cca2f5397212844a7a59804a6d8c6c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 120, y: 148}
+  - name: SideScroller Player Prototype_Frame_24
+    originalName: 
+    pivot: {x: 0.625, y: -0.2580645}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 120
+      y: 184
+      width: 24
+      height: 31
+    spriteID: 64c579e18d8d9d84fbd2c181518785be
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 120, y: 184}
+  - name: SideScroller Player Prototype_Frame_25
+    originalName: 
+    pivot: {x: 0.42857143, y: -0.2857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 194
+      y: 236
+      width: 14
+      height: 28
+    spriteID: df7a9510f453f654b9df9cc5911b59b9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 194, y: 236}
+  - name: SideScroller Player Prototype_Frame_26
+    originalName: 
+    pivot: {x: 0.65, y: -0.11764707}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 150
+      width: 20
+      height: 34
+    spriteID: 24c961c54fa510748b3a2180d9c1b0ab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 150}
+  - name: SideScroller Player Prototype_Frame_27
+    originalName: 
+    pivot: {x: 0.6666666, y: -0.11428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 224
+      width: 24
+      height: 35
+    spriteID: c8f1637183da1dd4fb134c7e177b49cb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 224}
+  - name: SideScroller Player Prototype_Frame_28
+    originalName: 
+    pivot: {x: 0.59090906, y: -0.15151516}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 120
+      y: 365
+      width: 22
+      height: 33
+    spriteID: 1c4e745d929b6d248b2c32e05805efc5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 120, y: 365}
+  - name: SideScroller Player Prototype_Frame_29
+    originalName: 
+    pivot: {x: 0.50000006, y: -0.44444448}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 221
+      y: 115
+      width: 20
+      height: 18
+    spriteID: 7b592cd4fa2dcf04089e57a55348b12e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 221, y: 115}
+  - name: SideScroller Player Prototype_Frame_30
+    originalName: 
+    pivot: {x: 0.50000006, y: -0.38095242}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 221
+      y: 57
+      width: 20
+      height: 21
+    spriteID: 4803aec461a459c48ad6f4841d9e31de
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 221, y: 57}
+  - name: SideScroller Player Prototype_Frame_31
+    originalName: 
+    pivot: {x: 0.50000006, y: -0.38095242}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 221
+      y: 86
+      width: 20
+      height: 21
+    spriteID: 769864c7c1f8672418982844e7759018
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 221, y: 86}
+  - name: SideScroller Player Prototype_Frame_32
+    originalName: 
+    pivot: {x: 0.5263158, y: -0.30769232}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 194
+      y: 63
+      width: 19
+      height: 26
+    spriteID: 7ae693034633ed742af143e1490d2633
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 194, y: 63}
+  - name: SideScroller Player Prototype_Frame_33
+    originalName: 
+    pivot: {x: 0.5263158, y: -0.30769232}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 194
+      y: 97
+      width: 19
+      height: 26
+    spriteID: 0281c26ab947dcf4f8e3aa5f3a902d84
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 194, y: 97}
+  - name: SideScroller Player Prototype_Frame_34
+    originalName: 
+    pivot: {x: 0.5263158, y: -0.2962963}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 295
+      width: 19
+      height: 27
+    spriteID: f49583252181a674c9b3b1d1f237e364
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 295}
+  - name: SideScroller Player Prototype_Frame_35
+    originalName: 
+    pivot: {x: 0.5263158, y: -0.2962963}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 330
+      width: 19
+      height: 27
+    spriteID: e6ab75c5c83f3f243b8e97e0d6e1c453
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 330}
+  - name: SideScroller Player Prototype_Frame_36
+    originalName: 
+    pivot: {x: 0.5555556, y: -0.2758621}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 42
+      width: 18
+      height: 29
+    spriteID: 8577a5c3927767644bd69b7ae7f3e6ee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 42}
+  - name: SideScroller Player Prototype_Frame_37
+    originalName: 
+    pivot: {x: 0.5555556, y: -0.2758621}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 79
+      width: 18
+      height: 29
+    spriteID: 0cbc7d2501fcda843b22d09ea1b8a699
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 79}
+  - name: SideScroller Player Prototype_Frame_38
+    originalName: 
+    pivot: {x: 0.70000005, y: -0.17142858}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 120
+      y: 406
+      width: 20
+      height: 35
+    spriteID: 1c7432ea74ac7564fa5d01de1e35e8a4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 120, y: 406}
+  - name: SideScroller Player Prototype_Frame_39
+    originalName: 
+    pivot: {x: 0.70000005, y: -0.17142858}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 120
+      y: 449
+      width: 20
+      height: 35
+    spriteID: 770bd6fbae8b8324782f9f416707e616
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 120, y: 449}
+  - name: SideScroller Player Prototype_Frame_40
+    originalName: 
+    pivot: {x: 0.6666667, y: -0.17142858}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 192
+      width: 18
+      height: 35
+    spriteID: 0304d5f154250fc4bb562bd56d1d34a7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 192}
+  - name: SideScroller Player Prototype_Frame_41
+    originalName: 
+    pivot: {x: 0.6666667, y: -0.17142858}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 235
+      width: 18
+      height: 35
+    spriteID: 4fd00cd78990f6e4ca8eac777f009a9c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 235}
+  - name: SideScroller Player Prototype_Frame_42
+    originalName: 
+    pivot: {x: 0.625, y: -0.17142858}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 157
+      y: 103
+      width: 16
+      height: 35
+    spriteID: 2a1af224a43bfa744a3dda5d7a50a12e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 157, y: 103}
+  - name: SideScroller Player Prototype_Frame_43
+    originalName: 
+    pivot: {x: 0.625, y: -0.17142858}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 157
+      y: 146
+      width: 16
+      height: 35
+    spriteID: 145da7e90c0f8fa48884172c0e96f83f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 157, y: 146}
+  - name: SideScroller Player Prototype_Frame_44
+    originalName: 
+    pivot: {x: 0.6, y: -0.35714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 194
+      y: 167
+      width: 15
+      height: 28
+    spriteID: 18e8ae068cfd0ba4395cce8beb1cd047
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 194, y: 167}
+  - name: SideScroller Player Prototype_Frame_45
+    originalName: 
+    pivot: {x: 0.6470588, y: -0.08571429}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 355
+      width: 17
+      height: 35
+    spriteID: c12957169abb7f64a909faca999a4a66
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 355}
+  - name: SideScroller Player Prototype_Frame_46
+    originalName: 
+    pivot: {x: 0.6666667, y: -0.08571429}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 278
+      width: 18
+      height: 35
+    spriteID: 709a39bf00b5dfd448cf753809c9ecb0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 278}
+  - name: SideScroller Player Prototype_Frame_47
+    originalName: 
+    pivot: {x: 0.39285713, y: -0.2857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 4
+      width: 28
+      height: 28
+    spriteID: b699a65aa9e37074ebcaa4cd9da27168
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 4}
+  - name: SideScroller Player Prototype_Frame_48
+    originalName: 
+    pivot: {x: 0.50000006, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 194
+      y: 4
+      width: 34
+      height: 17
+    spriteID: 57f2ce37c39064f4c8c5c979d32e1960
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 194, y: 4}
+  - name: SideScroller Player Prototype_Frame_49
+    originalName: 
+    pivot: {x: 0.34782606, y: -0.8000001}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 221
+      y: 29
+      width: 23
+      height: 20
+    spriteID: da01a3add1665e94d9c212cb8e4ae09b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 221, y: 29}
+  - name: SideScroller Player Prototype_Frame_50
+    originalName: 
+    pivot: {x: 0.45000002, y: -0.42857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 157
+      y: 189
+      width: 20
+      height: 28
+    spriteID: 40ab4575bdeb81c4186bdbe69d0ed897
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 157, y: 189}
+  - name: SideScroller Player Prototype_Frame_51
+    originalName: 
+    pivot: {x: 0.5, y: -1.2857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 120
+      y: 492
+      width: 24
+      height: 14
+    spriteID: 14687d83d0fb13642a889643ae3588fd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 120, y: 492}
+  - name: SideScroller Player Prototype_Frame_52
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.44}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 194
+      y: 203
+      width: 16
+      height: 25
+    spriteID: d0caebc21820f7e41abb989324a8e2ff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 194, y: 203}
+  - name: SideScroller Player Prototype_Frame_53
+    originalName: 
+    pivot: {x: 0.5555556, y: -0.2758621}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 116
+      width: 18
+      height: 29
+    spriteID: dcd69712328f9294aa33657b0e99d0e9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 116}
+  - name: SideScroller Player Prototype_Frame_54
+    originalName: 
+    pivot: {x: 0.6, y: -0.2758621}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 398
+      width: 20
+      height: 29
+    spriteID: 2efb27c25adb7134da02d6c2941552bf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 398}
+  - name: SideScroller Player Prototype_Frame_55
+    originalName: 
+    pivot: {x: 0.6842104, y: -0.2758621}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 157
+      y: 225
+      width: 19
+      height: 29
+    spriteID: 440acc652ddfda14fa632fb9ae6be715
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 157, y: 225}
+  - name: SideScroller Player Prototype_Frame_56
+    originalName: 
+    pivot: {x: 0.5789473, y: -0.2758621}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 157
+      y: 262
+      width: 19
+      height: 29
+    spriteID: 659b30c857fd9754ba9d10bc8b904fec
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 157, y: 262}
+  - name: SideScroller Player Prototype_Frame_61
+    originalName: 
+    pivot: {x: 0.5555556, y: -0.2758621}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 153
+      width: 18
+      height: 29
+    spriteID: 7180613815a2ff044a390c27c6cc8d4f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 153}
+  - name: SideScroller Player Prototype_Frame_62
+    originalName: 
+    pivot: {x: 0.46153846, y: -0.2758621}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 194
+      y: 346
+      width: 13
+      height: 29
+    spriteID: 4b4acca0a89771f49a569a9eef7f893b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 194, y: 346}
+  - name: SideScroller Player Prototype_Frame_63
+    originalName: 
+    pivot: {x: 0.46153846, y: -0.30769232}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 194
+      y: 419
+      width: 13
+      height: 26
+    spriteID: 68731e422a9357e418ac6469ccd32b42
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 194, y: 419}
+  - name: SideScroller Player Prototype_Frame_64
+    originalName: 
+    pivot: {x: 0.42857143, y: -0.3478261}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 221
+      y: 141
+      width: 14
+      height: 23
+    spriteID: 53c3b1c4087094b41a094119aebba007
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 221, y: 141}
+  - name: SideScroller Player Prototype_Frame_65
+    originalName: 
+    pivot: {x: 0.42857143, y: -0.3478261}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 221
+      y: 172
+      width: 14
+      height: 23
+    spriteID: 859f970b20dbb1847908033617265324
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 221, y: 172}
+  - name: SideScroller Player Prototype_Frame_66
+    originalName: 
+    pivot: {x: 0.42857143, y: -0.3478261}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 221
+      y: 203
+      width: 14
+      height: 23
+    spriteID: f645ada8e2cce46419206c49034dbfc5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 221, y: 203}
+  - name: SideScroller Player Prototype_Frame_67
+    originalName: 
+    pivot: {x: 0.3846154, y: -0.2857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 120
+      y: 293
+      width: 26
+      height: 28
+    spriteID: d0c92b221dc87904b91212de913c4445
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 120, y: 293}
+  - name: SideScroller Player Prototype_Frame_68
+    originalName: 
+    pivot: {x: 0.3846154, y: -0.2857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 120
+      y: 329
+      width: 26
+      height: 28
+    spriteID: aa940eb5ade90aa4b897e69b2dee8791
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 120, y: 329}
+  - name: SideScroller Player Prototype_Frame_69
+    originalName: 
+    pivot: {x: 0.3125, y: -0.2857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 80
+      width: 32
+      height: 28
+    spriteID: 4d3b031d320e2a240b0debfff23818d9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 80}
+  - name: SideScroller Player Prototype_Frame_70
+    originalName: 
+    pivot: {x: 0.29411766, y: -0.26666668}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 42
+      width: 34
+      height: 30
+    spriteID: 0455b8ed54f08c94e8fa6bf04e40a52f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 42}
+  - name: SideScroller Player Prototype_Frame_71
+    originalName: 
+    pivot: {x: 0.3703704, y: -0.26666668}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 4
+      width: 27
+      height: 30
+    spriteID: 02632831a325ea941815b2984edfb91e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 4}
+  - name: SideScroller Player Prototype_Frame_72
+    originalName: 
+    pivot: {x: 0.35714287, y: -0.2857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 40
+      width: 28
+      height: 28
+    spriteID: f60bfc5913aeb4749b4bd1304538d767
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 40}
+  - name: SideScroller Player Prototype_Frame_73
+    originalName: 
+    pivot: {x: 0.33333334, y: -0.2857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 267
+      width: 30
+      height: 28
+    spriteID: f147580e201cfde4bad76bdf45237bf1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 267}
+  - name: SideScroller Player Prototype_Frame_74
+    originalName: 
+    pivot: {x: 0.32258067, y: -0.2857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 188
+      width: 31
+      height: 28
+    spriteID: afde217436dcfc843b054aadb17f7a1a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 188}
+  - name: SideScroller Player Prototype_Frame_75
+    originalName: 
+    pivot: {x: 0.3125, y: -0.2857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 116
+      width: 32
+      height: 28
+    spriteID: 3ecaaeca07463684b9db6a581dd6e01f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 116}
+  - name: SideScroller Player Prototype_Frame_76
+    originalName: 
+    pivot: {x: 0.3125, y: -0.2857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 152
+      width: 32
+      height: 28
+    spriteID: be11f00f163cd3c40a73d8a804765a8f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 152}
+  - name: SideScroller Player Prototype_Frame_77
+    originalName: 
+    pivot: {x: 0.48275867, y: -0.2962963}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 120
+      y: 4
+      width: 29
+      height: 27
+    spriteID: ea1b92256da91614eabeb795e82db63e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 120, y: 4}
+  - name: SideScroller Player Prototype_Frame_78
+    originalName: 
+    pivot: {x: 0.48275867, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 157
+      y: 4
+      width: 29
+      height: 24
+    spriteID: a8b666f20aa2bcf4c8e6b736f1d4a61d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 157, y: 4}
+  - name: SideScroller Player Prototype_Frame_79
+    originalName: 
+    pivot: {x: 0.48387095, y: -0.2962963}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 339
+      width: 31
+      height: 27
+    spriteID: 1e0ca2da6e0879e468c6ea69921c0ae2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 339}
+  - name: SideScroller Player Prototype_Frame_80
+    originalName: 
+    pivot: {x: 0.2916667, y: -0.30769232}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 321
+      width: 24
+      height: 26
+    spriteID: 5571a40ec9443d1459ed3847fe65d72c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 321}
+  - name: SideScroller Player Prototype_Frame_81
+    originalName: 
+    pivot: {x: 0.4333333, y: -0.2857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 303
+      width: 30
+      height: 28
+    spriteID: 179b01e128236974d986e654974755e9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 303}
+  - name: SideScroller Player Prototype_Frame_82
+    originalName: 
+    pivot: {x: 0.46875, y: -0.44}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 480
+      width: 32
+      height: 25
+    spriteID: 2b5584dcd40965643b20c45fd7f1f109
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 480}
+  - name: SideScroller Player Prototype_Frame_83
+    originalName: 
+    pivot: {x: 0.48387095, y: -0.2962963}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 374
+      width: 31
+      height: 27
+    spriteID: 82bc55c65fd2d4a4290c8127edd7efcd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 374}
+  - name: SideScroller Player Prototype_Frame_84
+    originalName: 
+    pivot: {x: 0.27272728, y: -0.30769232}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 435
+      width: 22
+      height: 26
+    spriteID: e0133ee2784785a46b80607e160d8cb3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 435}
+  - name: SideScroller Player Prototype_Frame_85
+    originalName: 
+    pivot: {x: 0.48275867, y: -0.2962963}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 120
+      y: 39
+      width: 29
+      height: 27
+    spriteID: 2fd9d7f3beae3be468ca97df132521a9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 120, y: 39}
+  - name: SideScroller Player Prototype_Frame_86
+    originalName: 
+    pivot: {x: 0.48275867, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 157
+      y: 36
+      width: 29
+      height: 24
+    spriteID: d57dae855d52611449384282d1fb93ec
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 157, y: 36}
+  - name: SideScroller Player Prototype_Frame_57
+    originalName: 
+    pivot: {x: 0.48387095, y: -0.2962963}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 409
+      width: 31
+      height: 27
+    spriteID: dc7297fc2342cd042ab7e6092c623441
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 409}
+  - name: SideScroller Player Prototype_Frame_58
+    originalName: 
+    pivot: {x: 0.24137934, y: -0.2962963}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 120
+      y: 74
+      width: 29
+      height: 27
+    spriteID: dc2bd8e0df388c04782ce5af6e9dd807
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 120, y: 74}
+  - name: SideScroller Player Prototype_Frame_59
+    originalName: 
+    pivot: {x: 0.35135132, y: -0.26666668}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 37
+      height: 30
+    spriteID: 593e2360d8b796a45a805d56b68ab540
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: SideScroller Player Prototype_Frame_60
+    originalName: 
+    pivot: {x: 0.5555556, y: -0.40740743}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 120
+      y: 258
+      width: 27
+      height: 27
+    spriteID: 9eefca49247ddb341bb7d5f3a0536aa8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 120, y: 258}
+  - name: SideScroller Player Prototype_Frame_91
+    originalName: 
+    pivot: {x: 0.5172414, y: -0.2857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 444
+      width: 29
+      height: 28
+    spriteID: b8ae2acd74a6aaa4a858a7cde296653e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 444}
+  - name: SideScroller Player Prototype_Frame_92
+    originalName: 
+    pivot: {x: 0.27272728, y: -0.30769232}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 469
+      width: 22
+      height: 26
+    spriteID: 8680e0a2c6c14a04ea87a13158a8e865
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 469}
+  - name: SideScroller Player Prototype_Frame_63
+    originalName: 
+    pivot: {x: 0.23076923, y: -0.44444448}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 157
+      y: 487
+      width: 26
+      height: 18
+    spriteID: 2e7e5248621e86f478df3999b750ea57
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 157, y: 487}
+  - name: SideScroller Player Prototype_Frame_64
+    originalName: 
+    pivot: {x: 0.21428572, y: -1.6000001}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 503
+      width: 28
+      height: 5
+    spriteID: 25b0746d89e11c84a8a5de56883d7a77
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 503}
+  - name: SideScroller Player Prototype_Frame_65
+    originalName: 
+    pivot: {x: 0.21428572, y: -1.6000001}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 221
+      y: 234
+      width: 28
+      height: 5
+    spriteID: df0be05fc3d3f324ca1d8ff3f0729cb1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 221, y: 234}
+  - name: SideScroller Player Prototype_Frame_66
+    originalName: 
+    pivot: {x: 0.21428572, y: -1.6000001}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 221
+      y: 247
+      width: 28
+      height: 5
+    spriteID: 149ea1e8aa6fd574a8c115c108388e98
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 221, y: 247}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -2208822
+    name: SideScroller Player Prototype
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: SideScroller Player Prototype_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 14
+        y: 8
+        width: 18
+        height: 29
+      spriteId: d7d3f56012a571b49a3f153506176d7c
+    - name: SideScroller Player Prototype_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 14
+        y: 8
+        width: 19
+        height: 27
+      spriteId: ae1da8a0e8be2ae45b206acfd14dd43b
+    - name: SideScroller Player Prototype_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 14
+        y: 8
+        width: 19
+        height: 26
+      spriteId: 5983cc4cbaa960549b5b6fa68a1000c7
+    - name: SideScroller Player Prototype_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 14
+        y: 8
+        width: 19
+        height: 26
+      spriteId: e887495d8c6fdcd40b3bd0e76432e3db
+    - name: SideScroller Player Prototype_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 14
+        y: 8
+        width: 19
+        height: 26
+      spriteId: 4837e61cb8e91b84385bf035ff1b0e08
+    - name: SideScroller Player Prototype_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 14
+        y: 8
+        width: 19
+        height: 27
+      spriteId: e35cee40767c796458a053a1133f20c3
+    - name: SideScroller Player Prototype_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 14
+        y: 8
+        width: 18
+        height: 29
+      spriteId: 6412e112bee73f147bbb8523508f8485
+    - name: SideScroller Player Prototype_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 14
+        y: 8
+        width: 18
+        height: 30
+      spriteId: 87466940c8f0d484b8aeb76948e50c2f
+    - name: SideScroller Player Prototype_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 14
+        y: 8
+        width: 18
+        height: 30
+      spriteId: 9b95172583dc88542941a2e50e9cc617
+    - name: SideScroller Player Prototype_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 14
+        y: 8
+        width: 18
+        height: 30
+      spriteId: a45ff0cad38c8634c8328e32c302d44a
+    - name: SideScroller Player Prototype_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 18
+        y: 8
+        width: 12
+        height: 28
+      spriteId: 697ea9b7a26d33d4fbe79ff5b4983d26
+    - name: SideScroller Player Prototype_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 17
+        y: 8
+        width: 13
+        height: 29
+      spriteId: 3350457f00f27204b990856d008d981d
+    - name: SideScroller Player Prototype_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 15
+        y: 8
+        width: 18
+        height: 28
+      spriteId: 6e16f015ce1bb4140924af8458641dba
+    - name: SideScroller Player Prototype_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 14
+        y: 8
+        width: 19
+        height: 27
+      spriteId: ac700027fd018314c9fd9806a8902f23
+    - name: SideScroller Player Prototype_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 17
+        y: 8
+        width: 13
+        height: 28
+      spriteId: a22a0ff75ab70d74ba0d2b9a48371cae
+    - name: SideScroller Player Prototype_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 17
+        y: 8
+        width: 13
+        height: 29
+      spriteId: 4b33d57ba2914e64bbea2d17fd7a2c44
+    - name: SideScroller Player Prototype_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 15
+        y: 8
+        width: 18
+        height: 28
+      spriteId: 51c2133176dd46c48b3cc61c4db7e013
+    - name: SideScroller Player Prototype_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 14
+        y: 8
+        width: 21
+        height: 27
+      spriteId: c9a73c24eef578c4694900bffaca90dd
+    - name: SideScroller Player Prototype_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 10
+        y: 8
+        width: 24
+        height: 29
+      spriteId: 3ce4b78fb1d268f42b26dc050da0a320
+    - name: SideScroller Player Prototype_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 10
+        y: 12
+        width: 27
+        height: 27
+      spriteId: 3b9ae9a6c0c5c7d439084e765f2ffb09
+    - name: SideScroller Player Prototype_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 9
+        y: 8
+        width: 25
+        height: 31
+      spriteId: 57d050cbffa0655479521af4d9771436
+    - name: SideScroller Player Prototype_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 16
+        y: 8
+        width: 16
+        height: 28
+      spriteId: b3963a616d737564b9140f7892445c2b
+    - name: SideScroller Player Prototype_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 11
+        y: 8
+        width: 24
+        height: 29
+      spriteId: cb4d56fa9cdc9654ba65fa00b601bd0a
+    - name: SideScroller Player Prototype_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 9
+        y: 11
+        width: 27
+        height: 28
+      spriteId: 55cca2f5397212844a7a59804a6d8c6c
+    - name: SideScroller Player Prototype_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 9
+        y: 8
+        width: 24
+        height: 31
+      spriteId: 64c579e18d8d9d84fbd2c181518785be
+    - name: SideScroller Player Prototype_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 18
+        y: 8
+        width: 14
+        height: 28
+      spriteId: df7a9510f453f654b9df9cc5911b59b9
+    - name: SideScroller Player Prototype_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 11
+        y: 4
+        width: 20
+        height: 34
+      spriteId: 24c961c54fa510748b3a2180d9c1b0ab
+    - name: SideScroller Player Prototype_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 8
+        y: 4
+        width: 24
+        height: 35
+      spriteId: c8f1637183da1dd4fb134c7e177b49cb
+    - name: SideScroller Player Prototype_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 11
+        y: 5
+        width: 22
+        height: 33
+      spriteId: 1c4e745d929b6d248b2c32e05805efc5
+    - name: SideScroller Player Prototype_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 14
+        y: 8
+        width: 20
+        height: 18
+      spriteId: 7b592cd4fa2dcf04089e57a55348b12e
+    - name: SideScroller Player Prototype_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 14
+        y: 8
+        width: 20
+        height: 21
+      spriteId: 4803aec461a459c48ad6f4841d9e31de
+    - name: SideScroller Player Prototype_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 14
+        y: 8
+        width: 20
+        height: 21
+      spriteId: 769864c7c1f8672418982844e7759018
+    - name: SideScroller Player Prototype_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 14
+        y: 8
+        width: 19
+        height: 26
+      spriteId: 7ae693034633ed742af143e1490d2633
+    - name: SideScroller Player Prototype_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 14
+        y: 8
+        width: 19
+        height: 26
+      spriteId: 0281c26ab947dcf4f8e3aa5f3a902d84
+    - name: SideScroller Player Prototype_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 14
+        y: 8
+        width: 19
+        height: 27
+      spriteId: f49583252181a674c9b3b1d1f237e364
+    - name: SideScroller Player Prototype_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 14
+        y: 8
+        width: 19
+        height: 27
+      spriteId: e6ab75c5c83f3f243b8e97e0d6e1c453
+    - name: SideScroller Player Prototype_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 14
+        y: 8
+        width: 18
+        height: 29
+      spriteId: 8577a5c3927767644bd69b7ae7f3e6ee
+    - name: SideScroller Player Prototype_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 14
+        y: 8
+        width: 18
+        height: 29
+      spriteId: 0cbc7d2501fcda843b22d09ea1b8a699
+    - name: SideScroller Player Prototype_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 10
+        y: 6
+        width: 20
+        height: 35
+      spriteId: 1c7432ea74ac7564fa5d01de1e35e8a4
+    - name: SideScroller Player Prototype_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 10
+        y: 6
+        width: 20
+        height: 35
+      spriteId: 770bd6fbae8b8324782f9f416707e616
+    - name: SideScroller Player Prototype_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 12
+        y: 6
+        width: 18
+        height: 35
+      spriteId: 0304d5f154250fc4bb562bd56d1d34a7
+    - name: SideScroller Player Prototype_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 12
+        y: 6
+        width: 18
+        height: 35
+      spriteId: 4fd00cd78990f6e4ca8eac777f009a9c
+    - name: SideScroller Player Prototype_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 14
+        y: 6
+        width: 16
+        height: 35
+      spriteId: 2a1af224a43bfa744a3dda5d7a50a12e
+    - name: SideScroller Player Prototype_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 14
+        y: 6
+        width: 16
+        height: 35
+      spriteId: 145da7e90c0f8fa48884172c0e96f83f
+    - name: SideScroller Player Prototype_Frame_44
+      frameIndex: 44
+      cellRect:
+        x: 15
+        y: 10
+        width: 15
+        height: 28
+      spriteId: 18e8ae068cfd0ba4395cce8beb1cd047
+    - name: SideScroller Player Prototype_Frame_45
+      frameIndex: 45
+      cellRect:
+        x: 13
+        y: 3
+        width: 17
+        height: 35
+      spriteId: c12957169abb7f64a909faca999a4a66
+    - name: SideScroller Player Prototype_Frame_46
+      frameIndex: 46
+      cellRect:
+        x: 12
+        y: 3
+        width: 18
+        height: 35
+      spriteId: 709a39bf00b5dfd448cf753809c9ecb0
+    - name: SideScroller Player Prototype_Frame_47
+      frameIndex: 47
+      cellRect:
+        x: 13
+        y: 8
+        width: 28
+        height: 28
+      spriteId: b699a65aa9e37074ebcaa4cd9da27168
+    - name: SideScroller Player Prototype_Frame_48
+      frameIndex: 48
+      cellRect:
+        x: 7
+        y: 17
+        width: 34
+        height: 17
+      spriteId: 57f2ce37c39064f4c8c5c979d32e1960
+    - name: SideScroller Player Prototype_Frame_49
+      frameIndex: 49
+      cellRect:
+        x: 16
+        y: 16
+        width: 23
+        height: 20
+      spriteId: da01a3add1665e94d9c212cb8e4ae09b
+    - name: SideScroller Player Prototype_Frame_50
+      frameIndex: 50
+      cellRect:
+        x: 15
+        y: 12
+        width: 20
+        height: 28
+      spriteId: 40ab4575bdeb81c4186bdbe69d0ed897
+    - name: SideScroller Player Prototype_Frame_51
+      frameIndex: 51
+      cellRect:
+        x: 12
+        y: 18
+        width: 24
+        height: 14
+      spriteId: 14687d83d0fb13642a889643ae3588fd
+    - name: SideScroller Player Prototype_Frame_52
+      frameIndex: 52
+      cellRect:
+        x: 16
+        y: 11
+        width: 16
+        height: 25
+      spriteId: d0caebc21820f7e41abb989324a8e2ff
+    - name: SideScroller Player Prototype_Frame_53
+      frameIndex: 53
+      cellRect:
+        x: 14
+        y: 8
+        width: 18
+        height: 29
+      spriteId: dcd69712328f9294aa33657b0e99d0e9
+    - name: SideScroller Player Prototype_Frame_54
+      frameIndex: 54
+      cellRect:
+        x: 12
+        y: 8
+        width: 20
+        height: 29
+      spriteId: 2efb27c25adb7134da02d6c2941552bf
+    - name: SideScroller Player Prototype_Frame_55
+      frameIndex: 55
+      cellRect:
+        x: 11
+        y: 8
+        width: 19
+        height: 29
+      spriteId: 440acc652ddfda14fa632fb9ae6be715
+    - name: SideScroller Player Prototype_Frame_56
+      frameIndex: 56
+      cellRect:
+        x: 13
+        y: 8
+        width: 19
+        height: 29
+      spriteId: 659b30c857fd9754ba9d10bc8b904fec
+    - name: SideScroller Player Prototype_Frame_57
+      frameIndex: 57
+      cellRect:
+        x: 14
+        y: 8
+        width: 18
+        height: 29
+      spriteId: 7180613815a2ff044a390c27c6cc8d4f
+    - name: SideScroller Player Prototype_Frame_58
+      frameIndex: 58
+      cellRect:
+        x: 18
+        y: 8
+        width: 13
+        height: 29
+      spriteId: 4b4acca0a89771f49a569a9eef7f893b
+    - name: SideScroller Player Prototype_Frame_59
+      frameIndex: 59
+      cellRect:
+        x: 18
+        y: 8
+        width: 13
+        height: 26
+      spriteId: 68731e422a9357e418ac6469ccd32b42
+    - name: SideScroller Player Prototype_Frame_60
+      frameIndex: 60
+      cellRect:
+        x: 18
+        y: 8
+        width: 14
+        height: 23
+      spriteId: 53c3b1c4087094b41a094119aebba007
+    - name: SideScroller Player Prototype_Frame_61
+      frameIndex: 61
+      cellRect:
+        x: 18
+        y: 8
+        width: 14
+        height: 23
+      spriteId: 859f970b20dbb1847908033617265324
+    - name: SideScroller Player Prototype_Frame_62
+      frameIndex: 62
+      cellRect:
+        x: 18
+        y: 8
+        width: 14
+        height: 23
+      spriteId: f645ada8e2cce46419206c49034dbfc5
+    - name: SideScroller Player Prototype_Frame_67
+      frameIndex: 67
+      cellRect:
+        x: 14
+        y: 8
+        width: 26
+        height: 28
+      spriteId: d0c92b221dc87904b91212de913c4445
+    - name: SideScroller Player Prototype_Frame_68
+      frameIndex: 68
+      cellRect:
+        x: 14
+        y: 8
+        width: 26
+        height: 28
+      spriteId: aa940eb5ade90aa4b897e69b2dee8791
+    - name: SideScroller Player Prototype_Frame_69
+      frameIndex: 69
+      cellRect:
+        x: 14
+        y: 8
+        width: 32
+        height: 28
+      spriteId: 4d3b031d320e2a240b0debfff23818d9
+    - name: SideScroller Player Prototype_Frame_70
+      frameIndex: 70
+      cellRect:
+        x: 14
+        y: 8
+        width: 34
+        height: 30
+      spriteId: 0455b8ed54f08c94e8fa6bf04e40a52f
+    - name: SideScroller Player Prototype_Frame_71
+      frameIndex: 71
+      cellRect:
+        x: 14
+        y: 8
+        width: 27
+        height: 30
+      spriteId: 02632831a325ea941815b2984edfb91e
+    - name: SideScroller Player Prototype_Frame_72
+      frameIndex: 72
+      cellRect:
+        x: 14
+        y: 8
+        width: 28
+        height: 28
+      spriteId: f60bfc5913aeb4749b4bd1304538d767
+    - name: SideScroller Player Prototype_Frame_73
+      frameIndex: 73
+      cellRect:
+        x: 14
+        y: 8
+        width: 30
+        height: 28
+      spriteId: f147580e201cfde4bad76bdf45237bf1
+    - name: SideScroller Player Prototype_Frame_74
+      frameIndex: 74
+      cellRect:
+        x: 14
+        y: 8
+        width: 31
+        height: 28
+      spriteId: afde217436dcfc843b054aadb17f7a1a
+    - name: SideScroller Player Prototype_Frame_75
+      frameIndex: 75
+      cellRect:
+        x: 14
+        y: 8
+        width: 32
+        height: 28
+      spriteId: 3ecaaeca07463684b9db6a581dd6e01f
+    - name: SideScroller Player Prototype_Frame_76
+      frameIndex: 76
+      cellRect:
+        x: 14
+        y: 8
+        width: 32
+        height: 28
+      spriteId: be11f00f163cd3c40a73d8a804765a8f
+    - name: SideScroller Player Prototype_Frame_77
+      frameIndex: 77
+      cellRect:
+        x: 10
+        y: 8
+        width: 29
+        height: 27
+      spriteId: ea1b92256da91614eabeb795e82db63e
+    - name: SideScroller Player Prototype_Frame_78
+      frameIndex: 78
+      cellRect:
+        x: 10
+        y: 12
+        width: 29
+        height: 24
+      spriteId: a8b666f20aa2bcf4c8e6b736f1d4a61d
+    - name: SideScroller Player Prototype_Frame_79
+      frameIndex: 79
+      cellRect:
+        x: 9
+        y: 8
+        width: 31
+        height: 27
+      spriteId: 1e0ca2da6e0879e468c6ea69921c0ae2
+    - name: SideScroller Player Prototype_Frame_80
+      frameIndex: 80
+      cellRect:
+        x: 17
+        y: 8
+        width: 24
+        height: 26
+      spriteId: 5571a40ec9443d1459ed3847fe65d72c
+    - name: SideScroller Player Prototype_Frame_81
+      frameIndex: 81
+      cellRect:
+        x: 11
+        y: 8
+        width: 30
+        height: 28
+      spriteId: 179b01e128236974d986e654974755e9
+    - name: SideScroller Player Prototype_Frame_82
+      frameIndex: 82
+      cellRect:
+        x: 9
+        y: 11
+        width: 32
+        height: 25
+      spriteId: 2b5584dcd40965643b20c45fd7f1f109
+    - name: SideScroller Player Prototype_Frame_83
+      frameIndex: 83
+      cellRect:
+        x: 9
+        y: 8
+        width: 31
+        height: 27
+      spriteId: 82bc55c65fd2d4a4290c8127edd7efcd
+    - name: SideScroller Player Prototype_Frame_84
+      frameIndex: 84
+      cellRect:
+        x: 18
+        y: 8
+        width: 22
+        height: 26
+      spriteId: e0133ee2784785a46b80607e160d8cb3
+    - name: SideScroller Player Prototype_Frame_85
+      frameIndex: 85
+      cellRect:
+        x: 10
+        y: 8
+        width: 29
+        height: 27
+      spriteId: 2fd9d7f3beae3be468ca97df132521a9
+    - name: SideScroller Player Prototype_Frame_86
+      frameIndex: 86
+      cellRect:
+        x: 10
+        y: 12
+        width: 29
+        height: 24
+      spriteId: d57dae855d52611449384282d1fb93ec
+    - name: SideScroller Player Prototype_Frame_87
+      frameIndex: 87
+      cellRect:
+        x: 9
+        y: 8
+        width: 31
+        height: 27
+      spriteId: dc7297fc2342cd042ab7e6092c623441
+    - name: SideScroller Player Prototype_Frame_88
+      frameIndex: 88
+      cellRect:
+        x: 17
+        y: 8
+        width: 29
+        height: 27
+      spriteId: dc2bd8e0df388c04782ce5af6e9dd807
+    - name: SideScroller Player Prototype_Frame_89
+      frameIndex: 89
+      cellRect:
+        x: 11
+        y: 8
+        width: 37
+        height: 30
+      spriteId: 593e2360d8b796a45a805d56b68ab540
+    - name: SideScroller Player Prototype_Frame_90
+      frameIndex: 90
+      cellRect:
+        x: 9
+        y: 11
+        width: 27
+        height: 27
+      spriteId: 9eefca49247ddb341bb7d5f3a0536aa8
+    - name: SideScroller Player Prototype_Frame_91
+      frameIndex: 91
+      cellRect:
+        x: 9
+        y: 8
+        width: 29
+        height: 28
+      spriteId: b8ae2acd74a6aaa4a858a7cde296653e
+    - name: SideScroller Player Prototype_Frame_92
+      frameIndex: 92
+      cellRect:
+        x: 18
+        y: 8
+        width: 22
+        height: 26
+      spriteId: 8680e0a2c6c14a04ea87a13158a8e865
+    - name: SideScroller Player Prototype_Frame_63
+      frameIndex: 63
+      cellRect:
+        x: 18
+        y: 8
+        width: 26
+        height: 18
+      spriteId: 2e7e5248621e86f478df3999b750ea57
+    - name: SideScroller Player Prototype_Frame_64
+      frameIndex: 64
+      cellRect:
+        x: 18
+        y: 8
+        width: 28
+        height: 5
+      spriteId: 25b0746d89e11c84a8a5de56883d7a77
+    - name: SideScroller Player Prototype_Frame_65
+      frameIndex: 65
+      cellRect:
+        x: 18
+        y: 8
+        width: 28
+        height: 5
+      spriteId: df0be05fc3d3f324ca1d8ff3f0729cb1
+    - name: SideScroller Player Prototype_Frame_66
+      frameIndex: 66
+      cellRect:
+        x: 18
+        y: 8
+        width: 28
+        height: 5
+      spriteId: 149ea1e8aa6fd574a8c115c108388e98
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 48, y: 48}
